@@ -21,9 +21,16 @@ int main()
 				
 		std::cout << "Ambas cadenas son iguales";
 		
-	}elseif(strcmp(cadena1,cadena2) > 0)
+	}
+	
+	if(strcmp(cadena1,cadena2) > 0)
 	{
 		std::cout << "La Cadena 1 es mayor que la cadena 2 " << cadena1 << " " << cadena2;
+	}
+	
+	if(strcmp(cadena2,cadena1) > 0)
+	{
+		std::cout << "La Cadena 2 es mayor que la cadena 1 " << cadena1 << " " << cadena2;
 	}
 	
 	getch();

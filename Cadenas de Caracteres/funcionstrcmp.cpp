@@ -7,22 +7,22 @@
 int main()
 {
 	char name[] = "Avion";
-	char lastname[] = "Botella";
+	char lastname[] = "Botella v";
 	int n;
 	
-	n = strcmp(name,lastname);
-	
-	std::cout << n;
-	
-	
-//	if(strcmp(name,lastname) == 0)
-//	{
-//		std::cout << "Las palabras son iguales";
-//	 }else
-//	 {
-//	 	std::cout << "Las Palabras no son iguales";
-//	 }
+//	n = strcmp(name,lastname);
 //	
+//	std::cout << n;
+	
+	
+	if(strcmp(name,lastname) == 0)
+	{
+		std::cout << "Las palabras son iguales";
+	 }else
+	 {
+	 	std::cout << "Las Palabras no son iguales";
+	 }
+	
 	
 	getch();
 	return 0;
