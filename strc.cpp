@@ -22,4 +22,7 @@ int main()
 	std::cout << persona1.name << " ";
 	std::cout << persona1.age << " ";
 	std::cout << persona1.addres;
+	
+	getch();
+	return 0;
 }

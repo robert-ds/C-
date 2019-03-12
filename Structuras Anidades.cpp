@@ -19,6 +19,9 @@ int main(){
 	std::cout << empleado.dir_empleado.ciudad << ", ";
 	std::cout << empleado.dir_empleado.provincia << ", ";
 	std::cout << empleado.salario;
+	
+	getch();
+	return 0;
 }
 
 
