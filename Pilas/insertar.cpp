@@ -8,7 +8,6 @@
 struct Nodo{
 	int dato;
 	Nodo *siguiente;
-	
 };
 
 //Prototipo de la función
