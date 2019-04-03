@@ -12,6 +12,7 @@ struct Nodo{
 
 //Prototipos de la función
 void agregarPila(Nodo *&,int);
+void sacarPila(Nodo *&, int &);
 
 int main(){
 	Nodo *pila = NULL;	
@@ -23,6 +24,16 @@ int main(){
 	std::cout << "\nDigite otro numero: "; std::cin >> dato;
 	agregarPila(pila,dato);
 	
+	std::cout << "\n\nSacando el ultimo elemento de la pila:  ";
+	while (pila != NULL){//Mientras no sea el final de la pila. 
+	 	sacarPila(pila,dato);
+	 	
+	 	if( pila != NULL ){
+	 		std::cout << dato << ", ";
+		 }else{
+		 	std::cout << dato << ".";
+		 }
+	}
 	
 	getch();
 	return 0;
@@ -33,7 +44,12 @@ void agregarPila(Nodo *&pila,int n){
 	nuevo_nodo->siguiente = pila;
 	pila = nuevo_nodo;
 
-	std::cout << "\nElemento " << n << " agregado a Pila correctamente!";
+	std::cout << "\n\tElemento " << n << " agregado a Pila correctamente!";
 	
 }
-
+void sacarPila(Nodo *&pila, int &n){
+	Nodo *aux = pila;
+	n = aux->dato;
+	pila = aux->siguiente;
+	delete aux;
+}
