@@ -1,6 +1,6 @@
 /*Ejercicio 1: Hacer un programa en c++, Utilizando Colas que contenga el siguiente menú:
 1. Insertar un Caracter a una Cola
-2. Mostrar toso los elementos de la cola.
+2. Mostrar todos los elementos de la cola.
 3. Salir
 
 */
