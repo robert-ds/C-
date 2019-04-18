@@ -71,7 +71,7 @@ void Menu(){
 	do{
 		std::cout << "\t\t.::MENU::.\n";
 		std::cout << "1. Insertar Elemetos en la Lista\n";
-		std::cout << "2. Mostar Elelentos de la Lista\n";
+		std::cout << "2. Mostar Elementos de la Lista\n";
 		std::cout << "3. Salir\n";
 		std::cout << "\tElija una Opcion: ";
 		std::cin >> opc;
@@ -97,7 +97,7 @@ void Menu(){
 	}while( opc != 3 );
 	
 	if( opc == 3 ){
-		std::cout << "Hasta Pronto, Espero vuelvas!.\n";
+		std::cout << "Hasta Pronto, Espero vuelvas!.\n\n";
 		std::cout << "Presiona Cualquier tecla para Salir!";
 	}
 	
